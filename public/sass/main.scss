@@ -1,0 +1,55 @@
+@import "helpers/variables";
+@import "helpers/custom-mixins";
+@import "helpers/placeholders";
+@import "base/resset";
+@import "layout/grid";
+@import "components/general";
+@import "layout/general";
+
+@media #{$breakpoint-medium} {
+ 
+}
+
+/*
+	Parallax
+*/
+
+html, body {
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: gray;
+}
+
+.parallax-page {
+	height: 100vh;
+	position: relative;
+}
+
+.parallax-image-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+
+	div {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		position: relative;
+	}
+	div:first-child {
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+
+

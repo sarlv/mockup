@@ -1,0 +1,65 @@
+/* Page
+--------------------------------------------------*/
+
+.logo {
+	margin: 0;
+	position: relative;
+	top: 25px;
+	left: 25px;
+	display: inline;
+	font-weight: normal;
+}
+
+.parallax-window {
+	padding: 25px;
+	min-height: 400px;
+	background: #fff;
+	position: relative;
+}
+
+.enter {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	a {
+		@include button;
+		text-decoration: none;
+	}
+}
+
+.next-page {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	margin-left: -35px;
+}
+
+/* Page footer
+--------------------------------------------------*/
+
+.page-footer {
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	padding: 0 25px;
+	height: 50px;
+	width: 100%;
+	.nav-footer {
+	line-height: 50px;
+	vertical-align: middle;
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+	.apps {
+		position: absolute;
+		right: 25px;
+		top: 0;
+		li {
+			@include button;
+			list-style: none;
+		}
+	}
+}
+
